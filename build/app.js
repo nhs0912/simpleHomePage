@@ -48,27 +48,29 @@
   \*****************/
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/app.bootstrap.js */"55c77662804608a7a3dc");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/app.config.js */"05211f1afa57ca84aa17");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/app.module.js */"d130ee326adc5f318b40");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/app.run.js */"701161b70307a590a5e9");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/common/common.service.config.js */"4f85a43cbbac5b5290b2");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/common/common.service.js */"2e1dffc3117bcdfb7c17");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/common/common.service.rest.js */"bffeb31d8da8c2e09483");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/components/layouts/container/container.directive.js */"a4432495b6df8ca103e6");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/components/layouts/footer/footer.directive.js */"b44ba849da159d4d832c");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/components/layouts/header/header.directive.js */"81df59a275ddaf10ea61");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/views/board/board.controller.js */"7f3ebe75cb51b317561d");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/views/login/login.controller.js */"ebf82b59a10e77a32285");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/views/template/Chaja.controller.js */"196e38fb1d1ee92c926f");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/views/template/searchBank.controller.js */"1cf7e72e6e58c6977f65");
-	__webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/views/template/searchSuzy.controller.js */"c88fba985232c6f9ccd6");
-	module.exports = __webpack_require__(/*! /Users/heeseoknoh/Documents/eduBx/src/app/views/template/template.controller.js */"78d868e07a07e8eb0a0f");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/app.bootstrap.js */"f2312596f3b7d4a164cd");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/app.config.js */"ac9fb58e23491f500d5e");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/app.module.js */"a3526f024d21c0dc4dbf");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/app.run.js */"74db4062ceb3ba03f075");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/common/common.service.config.js */"995c727d3d8213332392");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/common/common.service.js */"f3d1aa46e6a19eaedea1");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/common/common.service.rest.js */"0438cdb4caf45883466d");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/components/layouts/container/container.directive.js */"9d0ea21effa4c1c17055");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/components/layouts/footer/footer.directive.js */"6fc822223a8b98670938");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/components/layouts/header/header.directive.js */"66d4463fb11a998e40bb");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/board/board.controller.js */"427268f1c1723d7664bf");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/login/login.controller.js */"a1096974154d4a50fd4e");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/accountTransfer.controller.js */"53a2b41ec8e9fc0bd3b5");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/Chaja.controller.js */"93b7cae3349341b00fad");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/searchBank.controller.js */"4a94ec7f0f3937aab05e");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/searchNoteBook.controller.js */"fa2099b31973de2a7382");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/searchSuzy.controller.js */"e560e91931c670ee19a2");
+	module.exports = __webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/template.controller.js */"7cf2c0500fdf3162e05e");
 
 
 /***/ },
 
-/***/ "78d868e07a07e8eb0a0f":
+/***/ "7cf2c0500fdf3162e05e":
 /*!***********************************************!*\
   !*** ./views/template/template.controller.js ***!
   \***********************************************/
@@ -76,7 +78,7 @@
 
 	'use strict';
 
-	var md = __webpack_require__(/*! ../../app.module */ "d130ee326adc5f318b40");
+	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 	md.controller('views.template.controller', __controller);
 
 	function __controller($scope, $commonService) {
@@ -110,7 +112,7 @@
 
 /***/ },
 
-/***/ "05211f1afa57ca84aa17":
+/***/ "ac9fb58e23491f500d5e":
 /*!***********************!*\
   !*** ./app.config.js ***!
   \***********************/
@@ -122,7 +124,7 @@
 	 * Created by sgjeon on 16. 4. 18..
 	 */
 
-	var app = __webpack_require__(/*! ./app.module */ "d130ee326adc5f318b40");
+	var app = __webpack_require__(/*! ./app.module */ "a3526f024d21c0dc4dbf");
 
 	// route 설정
 	app.config(__config);
@@ -167,6 +169,16 @@
 	        templateUrl: 'app/views/template/searchSuzy.tpl.html',
 	        controller: 'views.searchSuzy.controller',
 	        controllerAs: 'vm'
+	    }).state('accountTransfer', {
+	        url: "/accountTransfer",
+	        templateUrl: 'app/views/template/accountTransfer.tpl.html',
+	        controller: 'views.accountTransfer.controller',
+	        controllerAs: 'vm'
+	    }).state('searchNoteBook', {
+	        url: "/searchNoteBook",
+	        templateUrl: 'app/views/template/searchNoteBook.tpl.html',
+	        controller: 'views.searchNoteBook.controller',
+	        controllerAs: 'vm'
 	    }).state('Chaja', {
 	        url: "/Chaja",
 	        templateUrl: 'app/views/template/Chaja.tpl.html',
@@ -179,7 +191,7 @@
 
 /***/ },
 
-/***/ "d130ee326adc5f318b40":
+/***/ "a3526f024d21c0dc4dbf":
 /*!***********************!*\
   !*** ./app.module.js ***!
   \***********************/
@@ -215,7 +227,7 @@
 
 /***/ },
 
-/***/ "701161b70307a590a5e9":
+/***/ "74db4062ceb3ba03f075":
 /*!********************!*\
   !*** ./app.run.js ***!
   \********************/
@@ -228,7 +240,7 @@
 	 */
 
 	var angular = __webpack_require__(/*! angular */ 1);
-	var app = __webpack_require__(/*! ./app.module */ "d130ee326adc5f318b40");
+	var app = __webpack_require__(/*! ./app.module */ "a3526f024d21c0dc4dbf");
 
 	app.run(__run);
 
@@ -237,7 +249,7 @@
 
 /***/ },
 
-/***/ "4f85a43cbbac5b5290b2":
+/***/ "995c727d3d8213332392":
 /*!*****************************************!*\
   !*** ./common/common.service.config.js ***!
   \*****************************************/
@@ -249,7 +261,7 @@
 	 * Created by parkbeomsoo on 2016. 5. 31..
 	 */
 
-	var md = __webpack_require__(/*! ../app.module */ "d130ee326adc5f318b40");
+	var md = __webpack_require__(/*! ../app.module */ "a3526f024d21c0dc4dbf");
 
 	md.service('$commonServiceConfig', __service);
 
@@ -267,7 +279,7 @@
 
 /***/ },
 
-/***/ "2e1dffc3117bcdfb7c17":
+/***/ "f3d1aa46e6a19eaedea1":
 /*!**********************************!*\
   !*** ./common/common.service.js ***!
   \**********************************/
@@ -275,7 +287,7 @@
 
 	'use strict';
 
-	var md = __webpack_require__(/*! ../app.module */ "d130ee326adc5f318b40");
+	var md = __webpack_require__(/*! ../app.module */ "a3526f024d21c0dc4dbf");
 
 	md.service('$commonService', __service);
 
@@ -300,7 +312,45 @@
 
 /***/ },
 
-/***/ "55c77662804608a7a3dc":
+/***/ "0438cdb4caf45883466d":
+/*!***************************************!*\
+  !*** ./common/common.service.rest.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	/**
+	 * Created by parkbeomsoo on 2016. 5. 31..
+	 */
+
+	var md = __webpack_require__(/*! ../app.module */ "a3526f024d21c0dc4dbf");
+
+	md.service('$commonServiceRest', __service);
+
+	function __service($http, $q, $commonServiceConfig) {
+
+	    return {
+	        getJSONData: function getJSONData() {
+
+	            var defer = $q.defer();
+	            $http({
+	                url: $commonServiceConfig.restful.data.url,
+	                method: $commonServiceConfig.restful.data.method
+	            }).success(function (data, status, headers, config) {
+	                defer.resolve(data);
+	            }).error(function (data, status, headers, config) {
+	                defer.resolve(data);
+	            });
+
+	            return defer.promise;
+	        }
+	    };
+	}
+
+/***/ },
+
+/***/ "f2312596f3b7d4a164cd":
 /*!**************************!*\
   !*** ./app.bootstrap.js ***!
   \**************************/
@@ -320,45 +370,7 @@
 
 /***/ },
 
-/***/ "a4432495b6df8ca103e6":
-/*!*************************************************************!*\
-  !*** ./components/layouts/container/container.directive.js ***!
-  \*************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	/**
-	 * Created by sgjeon on 16. 4. 18..
-	 */
-
-	var md = __webpack_require__(/*! ../../../app.module */ "d130ee326adc5f318b40");
-
-	md.directive('componentsLayoutsContainerDirective', __directive);
-
-	/* @ngInject */
-	function __directive($compile) {
-
-	    return {
-	        replace: true,
-	        scope: false,
-	        transclude: false,
-	        restrict: 'E',
-	        templateUrl: 'app/components/layouts/container/container.tpl.html',
-	        compile: function compile(iElement, iAttrs, transclude) {
-
-	            return {
-	                pre: function pre($scope, iElement, iAttrs, controller) {},
-	                post: function post($scope, iElement, iAttrs, controller) {}
-	            };
-	        }
-	    };
-	}
-	module.exports = md;
-
-/***/ },
-
-/***/ "b44ba849da159d4d832c":
+/***/ "6fc822223a8b98670938":
 /*!*******************************************************!*\
   !*** ./components/layouts/footer/footer.directive.js ***!
   \*******************************************************/
@@ -370,7 +382,7 @@
 	 * Created by sgjeon on 16. 4. 18..
 	 */
 
-	var md = __webpack_require__(/*! ../../../app.module */ "d130ee326adc5f318b40");
+	var md = __webpack_require__(/*! ../../../app.module */ "a3526f024d21c0dc4dbf");
 
 	md.directive('componentsLayoutsFooterDirective', __directive);
 
@@ -396,7 +408,7 @@
 
 /***/ },
 
-/***/ "81df59a275ddaf10ea61":
+/***/ "66d4463fb11a998e40bb":
 /*!*******************************************************!*\
   !*** ./components/layouts/header/header.directive.js ***!
   \*******************************************************/
@@ -408,7 +420,7 @@
 	 * Created by sgjeon on 16. 4. 18..
 	 */
 
-	var md = __webpack_require__(/*! ../../../app.module */ "d130ee326adc5f318b40");
+	var md = __webpack_require__(/*! ../../../app.module */ "a3526f024d21c0dc4dbf");
 
 	md.directive('componentsLayoutsHeaderDirective', __directive);
 
@@ -435,7 +447,7 @@
 
 /***/ },
 
-/***/ "7f3ebe75cb51b317561d":
+/***/ "427268f1c1723d7664bf":
 /*!*****************************************!*\
   !*** ./views/board/board.controller.js ***!
   \*****************************************/
@@ -447,7 +459,7 @@
 	 * Created by sgjeon on 16. 4. 18..
 	 */
 
-	var md = __webpack_require__(/*! ../../app.module */ "d130ee326adc5f318b40");
+	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 
 	md.controller('views.board.controller', __controller);
 
@@ -497,7 +509,7 @@
 
 /***/ },
 
-/***/ "ebf82b59a10e77a32285":
+/***/ "a1096974154d4a50fd4e":
 /*!*****************************************!*\
   !*** ./views/login/login.controller.js ***!
   \*****************************************/
@@ -509,7 +521,7 @@
 	 * Created by sgjeon on 16. 4. 18..
 	 */
 
-	var md = __webpack_require__(/*! ../../app.module */ "d130ee326adc5f318b40");
+	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 
 	md.controller('views.login.controller', __controller);
 
@@ -520,7 +532,40 @@
 
 /***/ },
 
-/***/ "196e38fb1d1ee92c926f":
+/***/ "53a2b41ec8e9fc0bd3b5":
+/*!******************************************************!*\
+  !*** ./views/template/accountTransfer.controller.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
+	md.controller('views.accountTransfer.controller', __controller);
+
+	function __controller($scope, $commonService) {
+	  var vm = this;
+
+	  var viewModel = {
+	    "scriptBox": "뱅크웨어글로벌"
+	  };
+
+	  _.assign(vm, viewModel);
+	  console.log(vm);
+	  $scope.test = viewModel.scriptBox;
+	  // vm.click = () => {
+	  //    $commonService.login().then(
+	  //    	data => {
+	  //       console.log('success');
+	  //    }, data => {
+	  //       console.log('error');
+	  //    });
+	  // };
+	}
+
+/***/ },
+
+/***/ "93b7cae3349341b00fad":
 /*!********************************************!*\
   !*** ./views/template/Chaja.controller.js ***!
   \********************************************/
@@ -528,7 +573,7 @@
 
 	'use strict';
 
-	var md = __webpack_require__(/*! ../../app.module */ "d130ee326adc5f318b40");
+	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 	md.controller('views.Chaja.controller', __controller);
 
 	function __controller($scope, $commonService) {
@@ -551,7 +596,7 @@
 
 /***/ },
 
-/***/ "1cf7e72e6e58c6977f65":
+/***/ "4a94ec7f0f3937aab05e":
 /*!*************************************************!*\
   !*** ./views/template/searchBank.controller.js ***!
   \*************************************************/
@@ -559,7 +604,7 @@
 
 	'use strict';
 
-	var md = __webpack_require__(/*! ../../app.module */ "d130ee326adc5f318b40");
+	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 	md.controller('views.searchBank.controller', __controller);
 
 	function __controller($scope, $commonService) {
@@ -584,7 +629,40 @@
 
 /***/ },
 
-/***/ "c88fba985232c6f9ccd6":
+/***/ "fa2099b31973de2a7382":
+/*!*****************************************************!*\
+  !*** ./views/template/searchNoteBook.controller.js ***!
+  \*****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
+	md.controller('views.searchNoteBook.controller', __controller);
+
+	function __controller($scope, $commonService) {
+	  // let vm = this;
+
+	  //  let viewModel = {
+	  //        "scriptBox" :"뱅크웨어글로벌"
+	  //   };
+
+	  //  _.assign(vm, viewModel);
+	  //  console.log(vm);
+	  //  $scope.test = viewModel.scriptBox;
+	  // vm.click = () => {
+	  //    $commonService.login().then(
+	  //    	data => {
+	  //       console.log('success');
+	  //    }, data => {
+	  //       console.log('error');
+	  //    });
+	  // };
+	}
+
+/***/ },
+
+/***/ "e560e91931c670ee19a2":
 /*!*************************************************!*\
   !*** ./views/template/searchSuzy.controller.js ***!
   \*************************************************/
@@ -592,7 +670,7 @@
 
 	'use strict';
 
-	var md = __webpack_require__(/*! ../../app.module */ "d130ee326adc5f318b40");
+	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 	md.controller('views.searchBank.controller', __controller);
 
 	function __controller($scope, $commonService) {
@@ -617,41 +695,41 @@
 
 /***/ },
 
-/***/ "bffeb31d8da8c2e09483":
-/*!***************************************!*\
-  !*** ./common/common.service.rest.js ***!
-  \***************************************/
+/***/ "9d0ea21effa4c1c17055":
+/*!*************************************************************!*\
+  !*** ./components/layouts/container/container.directive.js ***!
+  \*************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	/**
-	 * Created by parkbeomsoo on 2016. 5. 31..
+	 * Created by sgjeon on 16. 4. 18..
 	 */
 
-	var md = __webpack_require__(/*! ../app.module */ "d130ee326adc5f318b40");
+	var md = __webpack_require__(/*! ../../../app.module */ "a3526f024d21c0dc4dbf");
 
-	md.service('$commonServiceRest', __service);
+	md.directive('componentsLayoutsContainerDirective', __directive);
 
-	function __service($http, $q, $commonServiceConfig) {
+	/* @ngInject */
+	function __directive($compile) {
 
 	    return {
-	        getJSONData: function getJSONData() {
+	        replace: true,
+	        scope: false,
+	        transclude: false,
+	        restrict: 'E',
+	        templateUrl: 'app/components/layouts/container/container.tpl.html',
+	        compile: function compile(iElement, iAttrs, transclude) {
 
-	            var defer = $q.defer();
-	            $http({
-	                url: $commonServiceConfig.restful.data.url,
-	                method: $commonServiceConfig.restful.data.method
-	            }).success(function (data, status, headers, config) {
-	                defer.resolve(data);
-	            }).error(function (data, status, headers, config) {
-	                defer.resolve(data);
-	            });
-
-	            return defer.promise;
+	            return {
+	                pre: function pre($scope, iElement, iAttrs, controller) {},
+	                post: function post($scope, iElement, iAttrs, controller) {}
+	            };
 	        }
 	    };
 	}
+	module.exports = md;
 
 /***/ }
 

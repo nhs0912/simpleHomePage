@@ -5,33 +5,47 @@
 	function enterkey() {
         if (window.event.keyCode == 13) {
             // 엔터키가 눌렸을 때 실행할 내용
-            window.alert("enterKey 작동!");
+           // window.alert("enterKey 작동!");
             var searchValue = $("#scriptBox").val();
 
 
             window.alert(searchValue);
             console.log(searchValue);
-            if(searchValue=="뱅크웨어글로벌"){            	
+            
+
+            if(searchValue=="뱅크웨어글로벌")
+            {            	
             	searchBank();	
             }
             if(searchValue=="suzy")
             {
             	searchSuzy();
             }
+            if(searchValue=="계좌이체"){
+                accountTransfer();
+            }
+            if(searchValue=="노트북")
+            {
+                searchNoteBook();
+            }
             
         }
 	}
-	function searchBank(){
-		// vm.click();
-		location.href="./#/searchBank";
-		//window.alert("search 작동!")
+	function searchBank(){		
+		location.href="./#/searchBank";		
 	}
 
-	function searchSuzy(){
-		// vm.click();
-		location.href="./#/searchSuzy";
-		//window.alert("search 작동!")
+	function searchSuzy(){		
+		location.href="./#/searchSuzy";		
 	}
+    function accountTresfer(){
+        //계좌 이체 기능 
+        location.href="./#/accountTransfer"; 
+    }
+    function searchNoteBook(){
+        //노트북 장보기 기능 
+        location.href="./#/searchNoteBook"; 
+    }
 
 
 	
@@ -43,7 +57,7 @@
 <br/>
 <br/>
 <br/>
-<h1>JustOne</h1>
+<h1><a href="./#/Chaja">JustOne</a></h1>
 <br/>
 <br/>
 <input type="text" name= "scriptBox" id ="scriptBox" style="text-align:center; width:500px; height:30px; letter-spacing: 1px ", onkeyup="enterkey()" ng-model = "vm.scriptBox">

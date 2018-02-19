@@ -55,6 +55,19 @@ function __config($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
         controller: 'views.searchSuzy.controller',
         controllerAs: 'vm'
     })
+    .state('accountTransfer', {
+        url: "/accountTransfer",
+        templateUrl: 'app/views/template/accountTransfer.tpl.html',
+        controller: 'views.accountTransfer.controller',
+        controllerAs: 'vm'
+    })
+
+    .state('searchNoteBook', {
+        url: "/searchNoteBook",
+        templateUrl: 'app/views/template/searchNoteBook.tpl.html',
+        controller: 'views.searchNoteBook.controller',
+        controllerAs: 'vm'
+    })
     .state('Chaja', {
         url: "/Chaja",
         templateUrl: 'app/views/template/Chaja.tpl.html',
