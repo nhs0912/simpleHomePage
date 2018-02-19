@@ -1,0 +1,35 @@
+{
+  "name": "angular-project",
+  "description": "angular app",
+  "version": "3.6.0",
+  "author": "seonggyun.jeon <seonggyun.jeon@bankwareglobal.com>",
+  "keywords": [
+    "angular app",
+    "angular"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "module_name": "^1.0.0"
+  },
+  "devDependencies": {
+    "angular": "1.5.3",
+    "angular-ui-router": "0.3.0",
+    "bx-builder-angular": "git+https://gitlab.bwg.co.kr/bx-ui/bx-builder-angular.git#production",
+    "bx-i18n": "git+https://gitlab.bwg.co.kr/bx-ui/bx-i18n.git#production",
+    "bx-ui-core": "git+https://gitlab.bwg.co.kr/bx-ui/bx-ui-core.git#production",
+    "bx-ui": "git+https://gitlab.bwg.co.kr/bx-ui/bx-ui.git#production",
+    "bx-ui-angular": "git+https://gitlab.bwg.co.kr/bx-ui/bx-ui-angular.git#production",
+    "jquery": "2.2.3",
+    "lodash": "4.14.1",
+    "webpack": "1.13.1"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "engines": {
+    "node": ">=5.8.0"
+  }
+}

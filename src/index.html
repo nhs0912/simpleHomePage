@@ -1,0 +1,51 @@
+<!-- build:process -->
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id="ng-app">
+<head>
+    <!-- meta 정보 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="apple-mobile-web-app-title" content="<%= title %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+
+    <meta name="description" content="<%= title %>">
+    <meta name="keywords" content="<%= title %>" />
+
+    <title><%= title %></title>
+
+    <!-- /assets/css/*.css 파일이 모두 포함된다 -->
+    <!-- build:style css -->
+    <!-- /build -->
+
+    <!-- /common/external.pre.js 파일이 포함된다 -->
+    <!-- build:script pre -->
+    <!-- /build -->
+
+    <!-- 전 처리 파일인 external pre script 파일이 모두 포함된다 -->
+    <%= remote_script_pre %>
+
+    <!-- 전 처리 리모트 스타일 파일들이 모두 포함된다 -->
+    <%= remote_style %>
+
+</head>
+<body>
+    <!-- /app.js script 파일이 포함된다 -->
+    <!-- build:script app -->
+    <!-- /build -->
+
+    <!-- views wrapper area -->
+    <ui-view></ui-view>
+</body>
+
+    <!-- /common/external.post.js 파일이 포함된다 -->
+    <!-- build:script post -->
+    <!-- /build -->
+
+    <!-- remote post 파일이 포함된다. -->
+    <%= remote_script_post %>
+
+</html>
+<!-- /build -->

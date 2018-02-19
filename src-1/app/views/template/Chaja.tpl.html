@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+
+
+<script>
+	function enterkey() {
+        if (window.event.keyCode == 13) {
+            // 엔터키가 눌렸을 때 실행할 내용
+            window.alert("enterKey 작동!");
+            search();
+        }
+	}
+	function search(){
+		// vm.click();
+		location.href="./searchBank";
+		window.alert("search 작동!")
+	}
+</script>
+<meta charset="utf-8">
+<title>Chaja Project</title>
+</head>
+<div align="center">
+<br/>
+<br/>
+<br/>
+<h1>JustOne</h1>
+<br/>
+<br/>
+<input type="text" id ="scriptBox" style="text-align:center; width:500px; height:30px; letter-spacing: 1px ", onkeyup="enterkey()" ng-model = "vm.scriptBox">
+</div>
+
+
