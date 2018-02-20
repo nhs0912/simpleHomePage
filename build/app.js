@@ -543,7 +543,7 @@
 	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 	md.controller('views.accountTransfer.controller', __controller);
 
-	function __controller($scope, $commonService) {
+	function __controller($scope, $commonService, $stateParams, $state) {
 	  var vm = this;
 
 	  var viewModel = {
@@ -553,6 +553,7 @@
 	  _.assign(vm, viewModel);
 	  console.log(vm);
 	  $scope.test = viewModel.scriptBox;
+	  $scope.searchValue = $stateParams.params.searchInput;
 	  // vm.click = () => {
 	  //    $commonService.login().then(
 	  //    	data => {
@@ -640,24 +641,63 @@
 	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 	md.controller('views.searchNoteBook.controller', __controller);
 
-	function __controller($scope, $commonService) {
-	  // let vm = this;
+	function __controller($scope, $state, $commonService, $stateParams, $commonServiceRest) {
 
-	  //  let viewModel = {
-	  //        "scriptBox" :"뱅크웨어글로벌"
-	  //   };
+	                $scope.searchValue = $stateParams.params.searchInput;
+	                var vm = this;
+	                var viewModel = {
+	                                "items": [],
+	                                "button": {
+	                                                "readLabel": '데이터 읽기',
+	                                                "createLabel": '데이터 생성',
+	                                                "updateLabel": '데이터 업데이트',
+	                                                "deleteLabel": '데이터 삭제'
+	                                }
+	                };
+	                _.assign(vm, viewModel);
 
-	  //  _.assign(vm, viewModel);
-	  //  console.log(vm);
-	  //  $scope.test = viewModel.scriptBox;
-	  // vm.click = () => {
-	  //    $commonService.login().then(
-	  //    	data => {
-	  //       console.log('success');
-	  //    }, data => {
-	  //       console.log('error');
-	  //    });
-	  // };
+	                $commonServiceRest.getJSONData().then(function (data) {
+	                                vm.items = data;
+	                });
+
+	                //   $commonServiceRest.getJSONNotebookData().then((data) => {
+	                //         vm.items = data;
+	                // });
+
+	                $scope.moveNextPage = function () {
+	                                var params = {
+	                                                searchInput: $scope.searchValue
+	                                };
+
+	                                window.alert(params.searchInput);
+
+	                                switch (params.searchInput) {
+
+	                                                case "뱅크웨어글로벌":
+	                                                case "bankwareglobal":
+	                                                case "bankware global":
+	                                                                $state.go('searchBank', { params: params });
+	                                                                break;
+
+	                                                case "suzy":
+	                                                case "수지":
+	                                                case "miss a 수지":
+	                                                                $state.go('searchSuzy', { params: params });
+	                                                                break;
+
+	                                                case "계좌이체":
+	                                                                //accountTransfer();
+	                                                                break;
+
+	                                                case "노트북":
+	                                                case "notebook":
+	                                                case "laptop":
+	                                                case "랩탑":
+	                                                                //searchNoteBook();
+	                                                                break;
+
+	                                }
+	                };
 	}
 
 /***/ },
