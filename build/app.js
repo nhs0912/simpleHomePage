@@ -48,24 +48,24 @@
   \*****************/
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/app.bootstrap.js */"f2312596f3b7d4a164cd");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/app.config.js */"ac9fb58e23491f500d5e");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/app.module.js */"a3526f024d21c0dc4dbf");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/app.run.js */"74db4062ceb3ba03f075");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/common/common.service.config.js */"995c727d3d8213332392");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/common/common.service.js */"f3d1aa46e6a19eaedea1");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/common/common.service.rest.js */"0438cdb4caf45883466d");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/components/layouts/container/container.directive.js */"9d0ea21effa4c1c17055");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/components/layouts/footer/footer.directive.js */"6fc822223a8b98670938");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/components/layouts/header/header.directive.js */"66d4463fb11a998e40bb");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/board/board.controller.js */"427268f1c1723d7664bf");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/login/login.controller.js */"a1096974154d4a50fd4e");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/accountTransfer.controller.js */"53a2b41ec8e9fc0bd3b5");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/Chaja.controller.js */"93b7cae3349341b00fad");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/searchBank.controller.js */"4a94ec7f0f3937aab05e");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/searchNoteBook.controller.js */"fa2099b31973de2a7382");
-	__webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/searchSuzy.controller.js */"e560e91931c670ee19a2");
-	module.exports = __webpack_require__(/*! C:/Users/nhs09/Documents/eduBx/simpleHomePage/src/app/views/template/template.controller.js */"7cf2c0500fdf3162e05e");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/app.bootstrap.js */"f2312596f3b7d4a164cd");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/app.config.js */"ac9fb58e23491f500d5e");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/app.module.js */"a3526f024d21c0dc4dbf");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/app.run.js */"74db4062ceb3ba03f075");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/common/common.service.config.js */"995c727d3d8213332392");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/common/common.service.js */"f3d1aa46e6a19eaedea1");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/common/common.service.rest.js */"0438cdb4caf45883466d");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/components/layouts/container/container.directive.js */"9d0ea21effa4c1c17055");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/components/layouts/footer/footer.directive.js */"6fc822223a8b98670938");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/components/layouts/header/header.directive.js */"66d4463fb11a998e40bb");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/views/board/board.controller.js */"427268f1c1723d7664bf");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/views/login/login.controller.js */"a1096974154d4a50fd4e");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/views/template/accountTransfer.controller.js */"53a2b41ec8e9fc0bd3b5");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/views/template/Chaja.controller.js */"93b7cae3349341b00fad");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/views/template/searchBank.controller.js */"4a94ec7f0f3937aab05e");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/views/template/searchNoteBook.controller.js */"fa2099b31973de2a7382");
+	__webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/views/template/searchSuzy.controller.js */"e560e91931c670ee19a2");
+	module.exports = __webpack_require__(/*! C:/Users/nhs09/Documents/simpleHomePage/src/app/views/template/template.controller.js */"7cf2c0500fdf3162e05e");
 
 
 /***/ },
