@@ -13,10 +13,12 @@ $('#bxuip-img-frameTypeHorizon').BxImg().initialize();
 
 
 <h1><a href="./#/Chaja">JustOne</a>
-<input type="text" id ="scriptBox" value="{{test}}" style="text-align:left; width:500px; height:30px; letter-spacing: 1px ">
+<input type="text" id ="scriptBox" value={{searchValue}} style="text-align:left; width:500px; height:30px; letter-spacing: 1px ",  ng-model="searchValue">
+<button ng-click = "Chaja.controller.moveNextPage()" >검색</button>
 </h1>
 
-<h1>검색 결과 : suzy </h1>
+<h1>검색 결과 : {{searchValue}} </h1>
+<br>
 
 
 <img src="http://image.kdramastars.com/data/images/full/98785/suzy.jpg"  width="512" height="512">

@@ -47,26 +47,38 @@ function __config($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
         url: "/searchBank",
         templateUrl: 'app/views/template/searchBank.tpl.html',
         controller: 'views.searchBank.controller',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        params: {
+            params: null
+        }
     })
     .state('searchSuzy', {
         url: "/searchSuzy",
         templateUrl: 'app/views/template/searchSuzy.tpl.html',
         controller: 'views.searchSuzy.controller',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        params: {
+            params: null
+        }
     })
     .state('accountTransfer', {
         url: "/accountTransfer",
         templateUrl: 'app/views/template/accountTransfer.tpl.html',
         controller: 'views.accountTransfer.controller',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        params: {
+            params: null
+        }
     })
 
     .state('searchNoteBook', {
         url: "/searchNoteBook",
         templateUrl: 'app/views/template/searchNoteBook.tpl.html',
         controller: 'views.searchNoteBook.controller',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        params: {
+            params: null
+        }
     })
     .state('Chaja', {
         url: "/Chaja",

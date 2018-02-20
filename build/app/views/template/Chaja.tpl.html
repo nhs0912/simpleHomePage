@@ -1,53 +1,6 @@
 <!DOCTYPE html>
 <script   src="http://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
 <script>
-
-	function enterkey() {
-        if (window.event.keyCode == 13) {
-            // 엔터키가 눌렸을 때 실행할 내용
-           // window.alert("enterKey 작동!");
-            var searchValue = $("#scriptBox").val();
-
-
-            window.alert(searchValue);
-            console.log(searchValue);
-            
-
-            if(searchValue=="뱅크웨어글로벌")
-            {            	
-            	searchBank();	
-            }
-            if(searchValue=="suzy")
-            {
-            	searchSuzy();
-            }
-            if(searchValue=="계좌이체"){
-                accountTransfer();
-            }
-            if(searchValue=="노트북")
-            {
-                searchNoteBook();
-            }
-            
-        }
-	}
-	function searchBank(){		
-		location.href="./#/searchBank";		
-	}
-
-	function searchSuzy(){		
-		location.href="./#/searchSuzy";		
-	}
-    function accountTresfer(){
-        //계좌 이체 기능 
-        location.href="./#/accountTransfer"; 
-    }
-    function searchNoteBook(){
-        //노트북 장보기 기능 
-        location.href="./#/searchNoteBook"; 
-    }
-
-
 	
 </script>
 <meta charset="utf-8">
@@ -60,7 +13,10 @@
 <h1><a href="./#/Chaja">JustOne</a></h1>
 <br/>
 <br/>
-<input type="text" name= "scriptBox" id ="scriptBox" style="text-align:center; width:500px; height:30px; letter-spacing: 1px ", onkeyup="enterkey()" ng-model = "vm.scriptBox">
+<!-- onkeyup="enterkey()" -->
+<input type="text" name= "scriptBox" id ="scriptBox" style="text-align:center; width:500px; height:30px; letter-spacing: 1px ",  ng-model="searchValue">
+<button ng-click = "moveNextPage()" >검색</button>
+
 </div>
 
 

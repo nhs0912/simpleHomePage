@@ -81,7 +81,7 @@
 	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 	md.controller('views.template.controller', __controller);
 
-	function __controller($scope, $commonService) {
+	function __controller($scope, $commonService, $state) {
 	   var vm = this;
 	   $scope.test = 1;
 	   var viewModel = {
@@ -163,22 +163,34 @@
 	        url: "/searchBank",
 	        templateUrl: 'app/views/template/searchBank.tpl.html',
 	        controller: 'views.searchBank.controller',
-	        controllerAs: 'vm'
+	        controllerAs: 'vm',
+	        params: {
+	            params: null
+	        }
 	    }).state('searchSuzy', {
 	        url: "/searchSuzy",
 	        templateUrl: 'app/views/template/searchSuzy.tpl.html',
 	        controller: 'views.searchSuzy.controller',
-	        controllerAs: 'vm'
+	        controllerAs: 'vm',
+	        params: {
+	            params: null
+	        }
 	    }).state('accountTransfer', {
 	        url: "/accountTransfer",
 	        templateUrl: 'app/views/template/accountTransfer.tpl.html',
 	        controller: 'views.accountTransfer.controller',
-	        controllerAs: 'vm'
+	        controllerAs: 'vm',
+	        params: {
+	            params: null
+	        }
 	    }).state('searchNoteBook', {
 	        url: "/searchNoteBook",
 	        templateUrl: 'app/views/template/searchNoteBook.tpl.html',
 	        controller: 'views.searchNoteBook.controller',
-	        controllerAs: 'vm'
+	        controllerAs: 'vm',
+	        params: {
+	            params: null
+	        }
 	    }).state('Chaja', {
 	        url: "/Chaja",
 	        templateUrl: 'app/views/template/Chaja.tpl.html',
@@ -275,6 +287,15 @@
 	            }
 	        }
 	    };
+
+	    return {
+	        restful: {
+	            notebookData: {
+	                url: 'app/common/stub/notebook.json',
+	                method: 'GET'
+	            }
+	        }
+	    };
 	}
 
 /***/ },
@@ -303,6 +324,23 @@
 	        defer.resolve(data);
 	      }).error(function (data, status, headers, config) {
 	        defer.resolve(data);
+	      });
+
+	      return defer.promise;
+	    }
+	  };
+
+	  return {
+	    notebookList: function notebookList() {
+	      var defer = $q.defer();
+
+	      $http({
+	        url: 'app/common/stub/notebook.json',
+	        method: 'GET'
+	      }).success(function (data, status, headers, config) {
+	        defer.resolve(notebookData);
+	      }).error(function (data, status, headers, config) {
+	        defer.resolve(notebookData);
 	      });
 
 	      return defer.promise;
@@ -337,6 +375,21 @@
 	            $http({
 	                url: $commonServiceConfig.restful.data.url,
 	                method: $commonServiceConfig.restful.data.method
+	            }).success(function (data, status, headers, config) {
+	                defer.resolve(data);
+	            }).error(function (data, status, headers, config) {
+	                defer.resolve(data);
+	            });
+
+	            return defer.promise;
+	        },
+
+	        getJSONNotebookData: function getJSONNotebookData() {
+
+	            var defer = $q.defer();
+	            $http({
+	                url: $commonServiceConfig.restful.notebookData.url,
+	                method: $commonServiceConfig.restful.notebookData.method
 	            }).success(function (data, status, headers, config) {
 	                defer.resolve(data);
 	            }).error(function (data, status, headers, config) {
@@ -577,22 +630,55 @@
 	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 	md.controller('views.Chaja.controller', __controller);
 
-	function __controller($scope, $commonService) {
-	   var vm = this;
-	   $scope.test = 1;
-	   var viewModel = {
-	      "scriptBox": ""
-	   };
+	function __controller($scope, $state, $commonService) {
+	                var vm = this;
+	                $scope.test = 1;
+	                var viewModel = {
+	                                "scriptBox": ""
+	                };
 
-	   _.assign(vm, viewModel);
-	   console.log(vm);
-	   vm.click = function () {
-	      $commonService.login().then(function (data) {
-	         console.log('success');
-	      }, function (data) {
-	         console.log('error');
-	      });
-	   };
+	                _.assign(vm, viewModel);
+
+	                $scope.moveNextPage = function () {
+	                                var params = {
+	                                                searchInput: $scope.searchValue
+	                                };
+
+	                                // $state.go('searchBank', {searchValue: searchValue});
+	                                window.alert(params.searchInput);
+	                                // console.log(searchValue);
+
+	                                // if(params.searchInput=="뱅크웨어글로벌" || params.searchInput=="bankwareglobal")
+	                                // {
+	                                //   $state.go('searchBank', {params :params});
+	                                // }
+	                                switch (params.searchInput) {
+
+	                                                case "뱅크웨어글로벌":
+	                                                case "bankwareglobal":
+	                                                case "bankware global":
+	                                                                $state.go('searchBank', { params: params });
+	                                                                break;
+
+	                                                case "suzy":
+	                                                case "수지":
+	                                                case "miss a 수지":
+	                                                                $state.go('searchSuzy', { params: params });
+	                                                                break;
+
+	                                                case "계좌이체":
+	                                                                $state.go('accountTransfer', { params: params });
+	                                                                break;
+
+	                                                case "노트북":
+	                                                case "notebook":
+	                                                case "laptop":
+	                                                case "랩탑":
+	                                                                $state.go('searchNoteBook', { params: params });
+	                                                                break;
+
+	                                }
+	                };
 	}
 
 /***/ },
@@ -608,24 +694,51 @@
 	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 	md.controller('views.searchBank.controller', __controller);
 
-	function __controller($scope, $commonService) {
-	  var vm = this;
+	function __controller($scope, $state, $stateParams) {
+	                var vm = this;
 
-	  var viewModel = {
-	    "scriptBox": "뱅크웨어글로벌"
-	  };
+	                var viewModel = {
+	                                "scriptBox": "뱅크웨어글로벌"
+	                };
 
-	  _.assign(vm, viewModel);
-	  console.log(vm);
-	  $scope.test = viewModel.scriptBox;
-	  // vm.click = () => {
-	  //    $commonService.login().then(
-	  //    	data => {
-	  //       console.log('success');
-	  //    }, data => {
-	  //       console.log('error');
-	  //    });
-	  // };
+	                _.assign(vm, viewModel);
+
+	                console.log($stateParams.params.searchInput);
+	                $scope.searchValue = $stateParams.params.searchInput;
+	                $scope.moveNextPage = function () {
+	                                var params = {
+	                                                searchInput: $scope.searchValue
+	                                };
+
+	                                // $state.go('searchBank', {searchValue: searchValue});
+	                                window.alert(params.searchInput);
+	                                switch (params.searchInput) {
+
+	                                                case "뱅크웨어글로벌":
+	                                                case "bankwareglobal":
+	                                                case "bankware global":
+	                                                                $state.go('searchBank', { params: params });
+	                                                                break;
+
+	                                                case "suzy":
+	                                                case "수지":
+	                                                case "miss a 수지":
+	                                                                $state.go('searchSuzy', { params: params });
+	                                                                break;
+
+	                                                case "계좌이체":
+	                                                                //accountTransfer();
+	                                                                break;
+
+	                                                case "노트북":
+	                                                case "notebook":
+	                                                case "laptop":
+	                                                case "랩탑":
+	                                                                //searchNoteBook();
+	                                                                break;
+
+	                                }
+	                };
 	}
 
 /***/ },
@@ -711,26 +824,54 @@
 	'use strict';
 
 	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
-	md.controller('views.searchBank.controller', __controller);
+	md.controller('views.searchSuzy.controller', __controller);
 
-	function __controller($scope, $commonService) {
-	  var vm = this;
+	function __controller($scope, $commonService, $stateParams, $state) {
+	                var vm = this;
 
-	  var viewModel = {
-	    "scriptBox": "suzy"
-	  };
+	                var viewModel = {
+	                                "scriptBox": "suzy"
+	                };
 
-	  _.assign(vm, viewModel);
-	  console.log(vm);
-	  $scope.test = viewModel.scriptBox;
-	  // vm.click = () => {
-	  //    $commonService.login().then(
-	  //    	data => {
-	  //       console.log('success');
-	  //    }, data => {
-	  //       console.log('error');
-	  //    });
-	  // };
+	                _.assign(vm, viewModel);
+	                console.log(vm);
+	                $scope.test = viewModel.scriptBox;
+	                $scope.searchValue = $stateParams.params.searchInput;
+
+	                $scope.moveNextPage = function () {
+	                                var params = {
+	                                                searchInput: $scope.searchValue
+	                                };
+
+	                                window.alert(params.searchInput);
+
+	                                switch (params.searchInput) {
+
+	                                                case "뱅크웨어글로벌":
+	                                                case "bankwareglobal":
+	                                                case "bankware global":
+	                                                                $state.go('searchBank', { params: params });
+	                                                                break;
+
+	                                                case "suzy":
+	                                                case "수지":
+	                                                case "miss a 수지":
+	                                                                $state.go('searchSuzy', { params: params });
+	                                                                break;
+
+	                                                case "계좌이체":
+	                                                                $state.go('accountTransfer', { params: params });
+	                                                                break;
+
+	                                                case "노트북":
+	                                                case "notebook":
+	                                                case "laptop":
+	                                                case "랩탑":
+	                                                                $state.go('searchNoteBook', { params: params });
+	                                                                break;
+
+	                                }
+	                };
 	}
 
 /***/ },

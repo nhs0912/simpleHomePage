@@ -22,7 +22,24 @@ function __service($http, $q, $commonServiceConfig){
             });
 
             return defer.promise;
+        },
+
+        getJSONNotebookData : function(){
+
+            var defer = $q.defer();
+            $http({
+                url: $commonServiceConfig.restful.notebookData.url,
+                method: $commonServiceConfig.restful.notebookData.method
+            }).success(function (data, status, headers, config) {
+                defer.resolve(data);
+            }).error(function (data, status, headers, config) {
+                defer.resolve(data);
+            });
+
+            return defer.promise;
         }
     }
+
+    
 }
 

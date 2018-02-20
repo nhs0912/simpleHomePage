@@ -1,12 +1,12 @@
 [
-  {"id": "bwg1", "name": "뱅크웨어글로벌1"},
-  {"id": "bwg2", "name": "뱅크웨어글로벌2"},
-  {"id": "bwg3", "name": "뱅크웨어글로벌3"},
-  {"id": "bwg4", "name": "뱅크웨어글로벌4"},
-  {"id": "bwg5", "name": "뱅크웨어글로벌5"},
-  {"id": "bwg6", "name": "뱅크웨어글로벌6"},
-  {"id": "bwg7", "name": "뱅크웨어글로벌7"},
-  {"id": "bwg8", "name": "뱅크웨어글로벌8"},
-  {"id": "bwg9", "name": "뱅크웨어글로벌9"},
-  {"id": "bwg10", "name": "뱅크웨어글로벌10"}
+  {"price": "20000", "name": "utlrabook12","company": "samsung"},
+  {"price": "70000", "name": "gram 17 inch","company": "LG"},
+  {"price": "300000", "name": "hp notebook","company": "HP"},
+  {"price": "253350", "name": "mac book air","company": "apple"},
+  {"price": "600000", "name": "ultrabook5","company": "samsung"},
+  {"price": "560000600", "name": "vio4","company": "sony"},
+  {"price": "900080", "name": "compaq notebook2","company": "compaq"},
+  {"price": "59999", "name": "ultrabook3","company": "samsung"},
+  {"price": "9999999", "name": "gram 15 inch","company": "LG"},
+  {"price": "99990000", "name": "macbook pro","company": "apple"}
 ]
