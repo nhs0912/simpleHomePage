@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<script   src="http://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js">
+ 	
+$('#bxuip-img-frameTypeHorizon').BxImg().initialize();
+
+ </script>
+<meta charset="utf-8">
+<title>Chaja Project</title>
+</head>
+<div align="center">
+
+<h1><a href="./#/Chaja">JustOne</a>
+<input type="text" id ="scriptBox" value={{searchValue}} style="text-align:left; width:500px; height:30px; letter-spacing: 1px ",  ng-model="searchValue">
+<button ng-click = "moveNextPage()" >검색</button>
+</h1>
+
+<h1>검색 결과 : {{searchValue}} </h1>
+<br>
+
+<p>
+	노트북 검색 결과 페이지</p>
+	<div>
+<style type="text/css">
+
+		.list-container{
+			margin-top: 40px;
+		}
+
+		.table-list{
+			width: 100%;
+		}
+
+		.table-list th, td {
+			text-align: center;
+			border: silver 1px solid;
+		}
+
+		.table-list th:nth-child(1), td:nth-child(1){
+			width:20%
+		}
+
+		.table-list th:nth-child(2), td:nth-child(2){
+			width:40%
+		}
+
+		.table-list th:nth-child(3), td:nth-child(3){
+			width:40%
+		}
+
+	</style>
+	<div class="list-container">
+		<table class="table-list" summary="노트북 리스트">
+			<thead>
+				<tr>
+					<th>가격</th>
+					<th>이름</th>
+					<th>회사</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in vm.items">
+					<td>{{item.price}}</td>
+					<td>{{item.name}}</td>
+					<td>{{item.company}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
