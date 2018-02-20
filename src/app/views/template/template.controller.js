@@ -20,4 +20,6 @@ function __controller($scope, $commonService, $state)
          console.log('error');
       });
    };
+
+   
 }

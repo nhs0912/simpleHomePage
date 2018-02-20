@@ -13,15 +13,14 @@ function __controller($scope,$state, $stateParams)
   
     console.log($stateParams.params.searchInput);
     $scope.searchValue = $stateParams.params.searchInput;
-    $scope.moveNextPage = function(){
+   $scope.moveNextPage = function(){
     let params = {
          searchInput:  $scope.searchValue 
     };
-
-  
       
-    // $state.go('searchBank', {searchValue: searchValue});
-    window.alert(params.searchInput);  
+    
+   // window.alert(params.searchInput);
+   
      switch(params.searchInput){
 
                 case "뱅크웨어글로벌":
@@ -37,14 +36,14 @@ function __controller($scope,$state, $stateParams)
                 break;
 
                 case "계좌이체":
-                //accountTransfer();
+                $state.go('accountTransfer', {params: params});
                 break;
 
                 case "노트북":
                 case "notebook":
                 case "laptop":
                 case "랩탑":
-                //searchNoteBook();
+                $state.go('searchNoteBook', {params: params});
                 break;
 
             }

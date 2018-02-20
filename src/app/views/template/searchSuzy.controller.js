@@ -11,7 +11,7 @@ function __controller($scope, $commonService,$stateParams, $state)
    
    _.assign(vm, viewModel);
    console.log(vm);
-   $scope.test = viewModel.scriptBox;
+   //$scope.test = viewModel.scriptBox;
    $scope.searchValue = $stateParams.params.searchInput;
 
     $scope.moveNextPage = function(){
@@ -20,7 +20,7 @@ function __controller($scope, $commonService,$stateParams, $state)
     };
       
     
-    window.alert(params.searchInput);
+   // window.alert(params.searchInput);
    
      switch(params.searchInput){
 

@@ -17,14 +17,9 @@ function __controller($scope,$state, $commonService)
          searchInput:  $scope.searchValue 
     };
       
-    // $state.go('searchBank', {searchValue: searchValue});
-    window.alert(params.searchInput);
-   // console.log(searchValue);
-
-    // if(params.searchInput=="뱅크웨어글로벌" || params.searchInput=="bankwareglobal")
-    // {
-    //   $state.go('searchBank', {params :params});
-    // }
+    
+   // window.alert(params.searchInput);
+   
      switch(params.searchInput){
 
                 case "뱅크웨어글로벌":
