@@ -576,22 +576,51 @@
 	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 	md.controller('views.Chaja.controller', __controller);
 
-	function __controller($scope, $commonService) {
-	   var vm = this;
-	   $scope.test = 1;
-	   var viewModel = {
-	      "scriptBox": ""
-	   };
+	function __controller($scope, $state, $commonService) {
+	    var vm = this;
+	    $scope.test = 1;
+	    var viewModel = {
+	        "scriptBox": ""
+	    };
 
-	   _.assign(vm, viewModel);
-	   console.log(vm);
-	   vm.click = function () {
-	      $commonService.login().then(function (data) {
-	         console.log('success');
-	      }, function (data) {
-	         console.log('error');
-	      });
-	   };
+	    _.assign(vm, viewModel);
+
+	    $scope.moveNextPage = function () {
+	        var searchValue = $scope.searchValue;
+	        // $state.go('searchBank', {searchValue: searchValue});
+	        window.alert(searchValue);
+	        console.log(searchValue);
+
+	        if (searchValue == "뱅크웨어글로벌") {
+	            $state.go('searchBank', { searchValue: searchValue });
+	        }
+	        // switch(searchValue){
+
+	        //             case "뱅크웨어글로벌":
+	        //             case "bankwareglobal":
+	        //             case "bankware global"
+	        //             $state.go('searchBank', {searchValue: searchValue});
+	        //             break;
+
+	        //             case "suzy":
+	        //             case "수지":
+	        //             case "miss a 수지":
+	        //             //searchSuzy();
+	        //             break;
+
+	        //             case "계좌이체"
+	        //             //accountTransfer();
+	        //             break;
+
+	        //             case "노트북":
+	        //             case "notebook":
+	        //             case "laptop":
+	        //             case "랩탑":
+	        //             //searchNoteBook();
+	        //             break;
+
+	        //         }
+	    };
 	}
 
 /***/ },
@@ -607,7 +636,7 @@
 	var md = __webpack_require__(/*! ../../app.module */ "a3526f024d21c0dc4dbf");
 	md.controller('views.searchBank.controller', __controller);
 
-	function __controller($scope, $commonService) {
+	function __controller($scope, $stateParams, $commonService) {
 	  var vm = this;
 
 	  var viewModel = {
@@ -617,6 +646,8 @@
 	  _.assign(vm, viewModel);
 	  console.log(vm);
 	  $scope.test = viewModel.scriptBox;
+	  $scope.searchValue = $stateParams.searchValue;
+
 	  // vm.click = () => {
 	  //    $commonService.login().then(
 	  //    	data => {

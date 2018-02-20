@@ -1,7 +1,7 @@
 var md = require('../../app.module');
 md.controller('views.searchBank.controller', __controller);
 
-function __controller($scope, $commonService)
+function __controller($scope, $stateParams,$commonService)
 {
   let vm = this;
    
@@ -9,9 +9,11 @@ function __controller($scope, $commonService)
          "scriptBox" :"뱅크웨어글로벌"
     };
    
-   _.assign(vm, viewModel);
-   console.log(vm);
-   $scope.test = viewModel.scriptBox;
+    _.assign(vm, viewModel);
+    console.log(vm);
+    $scope.test = viewModel.scriptBox;
+    $scope.searchValue = $stateParams.searchValue;
+  
    // vm.click = () => {
    //    $commonService.login().then(
    //    	data => {
