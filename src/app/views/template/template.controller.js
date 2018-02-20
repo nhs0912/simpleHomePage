@@ -1,7 +1,7 @@
 var md = require('../../app.module');
 md.controller('views.template.controller', __controller);
 
-function __controller($scope, $commonService)
+function __controller($scope, $commonService, $state)
 {
    let vm = this;
    $scope.test = 1;

@@ -16,5 +16,14 @@ function __service(){
             }
         }
     }
+
+    return {
+        restful: {
+            notebookData: {
+                url: 'app/common/stub/notebook.json',
+                method: 'GET'
+            }
+        }
+    }
 }
 
